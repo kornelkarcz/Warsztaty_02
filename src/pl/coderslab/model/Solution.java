@@ -114,8 +114,9 @@ public class Solution {
             loadedSolution.created = resultSet.getString("created");
             loadedSolution.updated = resultSet.getString("updated");
             loadedSolution.description = resultSet.getString("description");
-            //loadedSolution.user = new User();
-
+            loadedSolution.user = User.loadUserById(conn, loadedSolution.getUser().getId());
+            loadedSolution.exercise = Exercise.loadExerciseById(conn, loadedSolution.getExercise().getId());
+            
             return loadedSolution;
         }
         return null;
@@ -132,7 +133,8 @@ public class Solution {
             loadedSolution.created = resultSet.getString("created");
             loadedSolution.updated = resultSet.getString("updated");
             loadedSolution.description = resultSet.getString("description");
-            //loadedSolution.user = new User();
+            loadedSolution.user = User.loadUserById(conn, loadedSolution.getUser().getId());
+            loadedSolution.exercise = Exercise.loadExerciseById(conn, loadedSolution.getExercise().getId());
             solutions.add(loadedSolution);
         }
         return solutions;
