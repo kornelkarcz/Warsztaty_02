@@ -105,4 +105,14 @@ public class Exercise {
                 ", description='" + description + '\'' +
                 '}';
     }
+
+    public void delete(Connection conn) throws SQLException {
+        if (this.id != 0) {
+            String sql = "DELETE FROM exercise WHERE id=?";
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setInt(1, this.id);
+            preparedStatement.executeUpdate();
+            this.id = 0;
+        }
+    }
 }
