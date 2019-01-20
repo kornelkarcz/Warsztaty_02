@@ -153,7 +153,6 @@ public class Solution {
             loadedSolution.created = resultSet.getString("created");
             loadedSolution.updated = resultSet.getString("updated");
             loadedSolution.description = resultSet.getString("descrption");
-            loadedSolution.user = User.loadUserById(conn, loadedSolution.getUser().getId());
             solutions.add(loadedSolution);
         }
 
@@ -173,7 +172,6 @@ public class Solution {
             loadedSolution.created = resultSet.getString("created");
             loadedSolution.updated = resultSet.getString("updated");
             loadedSolution.description = resultSet.getString("description");
-            loadedSolution.exercise = Exercise.loadExerciseById(conn, loadedSolution.getExercise().getId());
             solutions.add(loadedSolution);
         }
         return solutions;

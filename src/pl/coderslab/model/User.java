@@ -145,6 +145,24 @@ public class User {
         }
     }
 
+    public static ArrayList<User> loadAllByGroupId(Connection conn) throws SQLException {
+        ArrayList<User> users = new ArrayList<User>();
+        String sql = "SELECT * FROM users JOIN user_group ON users.user_group_id = user_group.id WHERE user_group.id = ?";
+        PreparedStatement preparedStatement = conn.prepareStatement(sql);
+        User user = new User();
+        preparedStatement.setInt(1, user.userGroup.getId());
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while (resultSet.next()) {
+            User loadedUser = new User();
+            loadedUser.id = resultSet.getInt("id");
+            loadedUser.userName = resultSet.getString("name");
+            loadedUser.email = resultSet.getString("email");
+            users.add(loadedUser);
+        }
+
+        return users;
+    }
+
     @Override
     public String toString() {
         return "User{" +
