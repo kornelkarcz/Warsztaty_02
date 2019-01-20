@@ -135,6 +135,16 @@ public class User {
         return users;
     }
 
+    public void delete(Connection conn) throws SQLException {
+        if (this.id != 0) {
+            String sql = "DELETE FROM users WHERE id=?";
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setInt(1, this.id);
+            preparedStatement.executeUpdate();
+            this.id = 0;
+        }
+    }
+
     @Override
     public String toString() {
         return "User{" +
