@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c80aa12b-9788-47ba-bb16-c7cef8d5ec84" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/coderslab/model/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/coderslab/model/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/coderslab/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/coderslab/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/coderslab/model/UserGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/coderslab/model/UserGroup.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pl/coderslab/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="132" column="34" lean-forward="true" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
+            <state relative-caret-position="1410">
+              <caret line="114" column="99" selection-start-line="114" selection-start-column="99" selection-end-line="114" selection-end-column="99" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3922#3928#0" expanded="true" />
@@ -63,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pl/coderslab/model/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="118" column="12" selection-start-line="118" selection-start-column="12" selection-end-line="118" selection-end-column="12" />
+            <state relative-caret-position="-19">
+              <caret line="118" selection-start-line="118" selection-end-line="118" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#776#777#0" expanded="true" />
@@ -106,15 +109,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pl/coderslab/model/UserGroup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="257">
+              <caret line="67" column="55" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#124#125#0" expanded="true" />
                 <element signature="e#149#150#0" expanded="true" />
                 <element signature="e#241#242#0" expanded="true" />
                 <element signature="e#268#269#0" expanded="true" />
                 <element signature="e#308#309#0" expanded="true" />
                 <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#2330#2341#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,11 +142,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/pl/coderslab/util/DbUtil.java" />
         <option value="$PROJECT_DIR$/src/pl/coderslab/util/BCrypt.java" />
-        <option value="$PROJECT_DIR$/src/pl/coderslab/model/UserGroup.java" />
         <option value="$PROJECT_DIR$/src/pl/coderslab/app/Main.java" />
-        <option value="$PROJECT_DIR$/src/pl/coderslab/model/User.java" />
         <option value="$PROJECT_DIR$/src/pl/coderslab/model/Exercise.java" />
         <option value="$PROJECT_DIR$/src/pl/coderslab/model/Solution.java" />
+        <option value="$PROJECT_DIR$/src/pl/coderslab/model/UserGroup.java" />
+        <option value="$PROJECT_DIR$/src/pl/coderslab/model/User.java" />
       </list>
     </option>
   </component>
@@ -197,7 +202,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547997871994" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547999213229" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -255,7 +260,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547817023955</updated>
-      <workItem from="1547817029928" duration="16350000" />
+      <workItem from="1547817029928" duration="17707000" />
     </task>
     <task id="LOCAL-00001" summary="Rename gitignore file">
       <created>1547818683384</created>
@@ -268,7 +273,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16350000" />
+    <option name="totallyTimeSpent" value="17707000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -427,34 +432,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/coderslab/model/UserGroup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state relative-caret-position="257">
+          <caret line="67" column="55" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#124#125#0" expanded="true" />
             <element signature="e#149#150#0" expanded="true" />
             <element signature="e#241#242#0" expanded="true" />
             <element signature="e#268#269#0" expanded="true" />
             <element signature="e#308#309#0" expanded="true" />
             <element signature="e#340#341#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/coderslab/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="132" column="34" lean-forward="true" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3922#3928#0" expanded="true" />
+            <element signature="e#2330#2341#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/coderslab/model/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="118" column="12" selection-start-line="118" selection-start-column="12" selection-end-line="118" selection-end-column="12" />
+        <state relative-caret-position="-19">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#776#777#0" expanded="true" />
@@ -464,6 +460,17 @@
             <element signature="e#914#915#0" expanded="true" />
             <element signature="e#952#953#0" expanded="true" />
             <element signature="e#4131#4141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/coderslab/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="114" column="99" selection-start-line="114" selection-start-column="99" selection-end-line="114" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3922#3928#0" expanded="true" />
           </folding>
         </state>
       </provider>

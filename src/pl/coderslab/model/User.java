@@ -112,7 +112,7 @@ public class User {
             loadedUser.userName = resultSet.getString("user_name");
             loadedUser.password = resultSet.getString("password");
             loadedUser.email = resultSet.getString("email");
-            loadedUser.userGroup = new UserGroup(1, "WAR_JEE_S_15");
+            loadedUser.userGroup = UserGroup.loadUserGroupById(conn, loadedUser.userGroup.getId());
             return loadedUser;
         }
         return null;
@@ -129,7 +129,7 @@ public class User {
             loadedUser.userName = resultSet.getString("user_name");
             loadedUser.password = resultSet.getString("password");
             loadedUser.email = resultSet.getString("email");
-            loadedUser.userGroup = new UserGroup(1, "WAR_JEE_S_15");
+            loadedUser.userGroup = UserGroup.loadUserGroupById(conn, loadedUser.userGroup.getId());
             users.add(loadedUser);
         }
         return users;

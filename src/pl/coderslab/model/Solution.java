@@ -116,7 +116,7 @@ public class Solution {
             loadedSolution.description = resultSet.getString("description");
             loadedSolution.user = User.loadUserById(conn, loadedSolution.getUser().getId());
             loadedSolution.exercise = Exercise.loadExerciseById(conn, loadedSolution.getExercise().getId());
-            
+
             return loadedSolution;
         }
         return null;
