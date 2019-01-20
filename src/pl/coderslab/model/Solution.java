@@ -142,8 +142,10 @@ public class Solution {
 
     static public ArrayList<Solution> loadAllByUserId(Connection conn, int id) throws SQLException {
         ArrayList<Solution> solutions = new ArrayList<Solution>();
-        String sql = "SELECT * FROM solution JOIN users ON solution.users_id = users.id where users.id = ?";
+        String sql = "SELECT * FROM solution JOIN users ON solution.users_id = users.id WHERE users.id = ?";
         PreparedStatement preparedStatement = conn.prepareStatement(sql);
+        Solution solution1 = new Solution();
+        preparedStatement.setInt(1, solution1.user.getId());
         ResultSet resultSet = preparedStatement.executeQuery();
         while (resultSet.next()) {
             Solution loadedSolution = new Solution();
@@ -152,10 +154,28 @@ public class Solution {
             loadedSolution.updated = resultSet.getString("updated");
             loadedSolution.description = resultSet.getString("descrption");
             loadedSolution.user = User.loadUserById(conn, loadedSolution.getUser().getId());
-            loadedSolution.exercise = Exercise.loadExerciseById(conn, loadedSolution.getExercise().getId());
             solutions.add(loadedSolution);
         }
 
+        return solutions;
+    }
+
+    static public ArrayList<Solution> loadAllByExerciseId(Connection conn) throws SQLException {
+        ArrayList<Solution> solutions = new ArrayList<Solution>();
+        String sql = "SELECT * FROM solution JOIN exercise ON solution.exercise_id = exercise.id WHERE exercise.id = ? ORDER BY solution.created ASC";
+        PreparedStatement preparedStatement = conn.prepareStatement(sql);
+        Solution solution1 = new Solution();
+        preparedStatement.setInt(1, solution1.exercise.getId());
+        ResultSet resultSet = preparedStatement.executeQuery();
+        while (resultSet.next()) {
+            Solution loadedSolution = new Solution();
+            loadedSolution.id = resultSet.getInt("id");
+            loadedSolution.created = resultSet.getString("created");
+            loadedSolution.updated = resultSet.getString("updated");
+            loadedSolution.description = resultSet.getString("description");
+            loadedSolution.exercise = Exercise.loadExerciseById(conn, loadedSolution.getExercise().getId());
+            solutions.add(loadedSolution);
+        }
         return solutions;
     }
 
