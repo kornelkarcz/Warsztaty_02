@@ -69,4 +69,6 @@ public class Solution {
     public void setExercise(Exercise exercise) {
         this.exercise = exercise;
     }
+
+
 }

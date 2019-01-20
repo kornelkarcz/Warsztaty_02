@@ -95,8 +95,8 @@ public class User {
             preparedStatement.setString(1, this.userName);
             preparedStatement.setString(2, this.email);
             preparedStatement.setString(3, this.password);
-            preparedStatement.setInt(5, this.id);
             preparedStatement.setInt(4, this.userGroup.getId());
+            preparedStatement.setInt(5, this.id);
             preparedStatement.executeUpdate();
         }
     }
